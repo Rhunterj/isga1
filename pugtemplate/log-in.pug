@@ -1,0 +1,26 @@
+include ../php/login.php
+html
+	head
+		include ../htmltemplate/head-pages.html
+
+	body
+		include ../htmltemplate/sidebar-pages.html
+		header
+			include ../htmltemplate/header.html
+
+		main
+			section.log-in
+				.log-in-container
+					form(action="" method="post")
+						input(type="text" name="username" placeholder="Username")
+						input(type="password" name="password" placeholder="Password")
+						input.button(type="submit" value="submit")
+					.account
+						a(href="create.html") Create account
+						span |
+						a(href="forgot.html") Forgot password
+
+
+
+		footer
+			include ../htmltemplate/footer-pages.html

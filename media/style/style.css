@@ -1,0 +1,341 @@
+/* Imported style*/
+/* General style*/
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 62,5%;
+  font-family: 'roboto', 'sans-serif'; }
+
+/* Header style */
+header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  z-index: 100; }
+  header p {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 1.2em; }
+  header .fa-bars {
+    margin-left: 25px; }
+  header .fa-search {
+    float: right;
+    margin-right: 25px; }
+  header .fa-search, header .fa-bars {
+    font-size: 1.2em; }
+
+/*  Sidebar Style */
+aside {
+  display: none;
+  position: absolute;
+  background: white;
+  z-index: 115;
+  min-height: 100vh;
+  width: 80%; }
+  aside .sidebar-head {
+    height: 150px;
+    background: #009688;
+    text-align: center; }
+    aside .sidebar-head img {
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 15px; }
+    aside .sidebar-head p {
+      color: white;
+      margin-left: 40px;
+      font-size: 1.2em;
+      margin-top: 10px;
+      text-align: left; }
+  aside .sidebar-content ul li {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 1em;
+    font-size: 0.8em; }
+    aside .sidebar-content ul li:last-child {
+      position: fixed;
+      bottom: 0; }
+      aside .sidebar-content ul li:last-child a {
+        color: red; }
+    aside .sidebar-content ul li a {
+      color: black;
+      font-size: 1.5em; }
+      aside .sidebar-content ul li a::hover {
+        color: #009688; }
+      aside .sidebar-content ul li a::visited {
+        color: black; }
+    aside .sidebar-content ul li i span {
+      margin-left: 20px; }
+    aside .sidebar-content ul li i::before {
+      display: inline-block;
+      width: 45px;
+      text-align: center; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  min-height: 100vh;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.6;
+  z-index: 110; }
+
+/* Home Style */
+.home-content {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center; }
+  .home-content .home-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    overflow: hidden; }
+    .home-content .home-image .blur {
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background-image: url("../img/sporten-in-amsterdam.jpeg");
+      background-size: cover; }
+    .home-content .home-image .fit {
+      color: white;
+      border: 3px solid white;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+      z-index: 10;
+      font-size: 1em;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 65px; }
+  .home-content article {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto; }
+    .home-content article h2 {
+      margin-top: 25px;
+      color: #009688;
+      font-size: 2em; }
+    .home-content article p {
+      font-size: 1em; }
+  .home-content a {
+    background-color: #009688;
+    color: white;
+    font-size: 1em;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin-top: 50px;
+    display: inline-block;
+    border-radius: 2px; }
+
+/* List page Style */
+.list-content .container, .gyms-info .container, .sports-info .container {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 45px; }
+  .list-content .container .item, .gyms-info .container .item, .sports-info .container .item {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background: white;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    Color: #009688;
+    font-size: 1.2em; }
+    .list-content .container .item:nth-child(5), .gyms-info .container .item:nth-child(5), .sports-info .container .item:nth-child(5) {
+      border: none; }
+  .list-content .container .item-data, .gyms-info .container .item-data, .sports-info .container .item-data {
+    display: none; }
+    .list-content .container .item-data h3, .gyms-info .container .item-data h3, .sports-info .container .item-data h3 {
+      font-size: 1.1em;
+      margin-top: 10px; }
+    .list-content .container .item-data p, .gyms-info .container .item-data p, .sports-info .container .item-data p {
+      font-size: 1em; }
+  .list-content .container .active, .gyms-info .container .active, .sports-info .container .active {
+    color: black; }
+
+/* Profile style */
+.profile .profile-head {
+  width: 100%;
+  height: 150px;
+  background-color: #009688;
+  text-align: center; }
+  .profile .profile-head img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 75px; }
+
+.profile .profile-info {
+  text-align: center;
+  margin-top: 90px; }
+  .profile .profile-info .name {
+    text-weight: bold;
+    font-size: 1em; }
+  .profile .profile-info .date {
+    color: #787878;
+    font-size: 0.9em; }
+
+.profile .saved {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1em;
+  margin-top: 50px; }
+  .profile .saved p {
+    border-bottom: 1px solid #E8E8E8;
+    padding: 20px 0px; }
+    .profile .saved p:last-of-type {
+      border: none; }
+    .profile .saved p span {
+      float: right; }
+
+/* Cards style */
+.routes .card, .gyms .card, .sports .card {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #56A29B;
+  color: white;
+  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .routes .card img, .gyms .card img, .sports .card img {
+    width: 100%;
+    max-height: 200px; }
+  .routes .card .card-content, .gyms .card .card-content, .sports .card .card-content {
+    padding: 20px; }
+    .routes .card .card-content h2, .gyms .card .card-content h2, .sports .card .card-content h2 {
+      font-size: 1.2em; }
+    .routes .card .card-content p, .gyms .card .card-content p, .sports .card .card-content p {
+      font-size: 1em;
+      margin-top: 10px; }
+    .routes .card .card-content a, .gyms .card .card-content a, .sports .card .card-content a {
+      display: inline-block;
+      font-size: 1em;
+      color: white;
+      text-decoration: none;
+      margin-top: 30px; }
+      .routes .card .card-content a:visited, .gyms .card .card-content a:visited, .sports .card .card-content a:visited {
+        color: white; }
+      .routes .card .card-content a:last-of-type, .gyms .card .card-content a:last-of-type, .sports .card .card-content a:last-of-type {
+        float: right; }
+
+/* */
+.routes-info, .gyms-info, .sports-info {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15px; }
+  .routes-info img, .gyms-info img, .sports-info img {
+    width: 100%;
+    max-height: 100px; }
+  .routes-info h2, .gyms-info h2, .sports-info h2 {
+    font-size: 1.2em;
+    margin-top: 15px; }
+    .routes-info h2 span, .gyms-info h2 span, .sports-info h2 span {
+      float: right; }
+  .routes-info p, .gyms-info p, .sports-info p {
+    margin-top: 15px;
+    font-size: 1em; }
+  .routes-info a.button, .gyms-info a.button, .sports-info a.button {
+    margin-top: 30px;
+    display: inline-block;
+    position: fixed;
+    bottom: 40px;
+    background-color: #009688;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1em;
+    border-radius: 2px; }
+    .routes-info a.button:last-of-type, .gyms-info a.button:last-of-type, .sports-info a.button:last-of-type {
+      right: 10%; }
+
+.gyms-info .container, .sports-info .container {
+  width: 100%;
+  margin-left: 0; }
+  .gyms-info .container .item-data p, .sports-info .container .item-data p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.gyms-info p:nth-child(2), .sports-info p:nth-child(2) {
+  margin-top: 15px; }
+
+.gyms-info a, .sports-info a {
+  position: static; }
+
+/* Log in */
+.log-in, .create, .forgot {
+  width: 100%;
+  height: 100vh;
+  background-color: #009688; }
+  .log-in .log-in-container, .log-in .create-container, .log-in .forgot-container, .create .log-in-container, .create .create-container, .create .forgot-container, .forgot .log-in-container, .forgot .create-container, .forgot .forgot-container {
+    width: 80%;
+    margin: 0 auto; }
+    .log-in .log-in-container form input, .log-in .create-container form input, .log-in .forgot-container form input, .create .log-in-container form input, .create .create-container form input, .create .forgot-container form input, .forgot .log-in-container form input, .forgot .create-container form input, .forgot .forgot-container form input {
+      margin-top: 15px;
+      border: 1px solid white;
+      background-color: #009688;
+      border-radius: 25px;
+      width: 100%;
+      height: 50px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0px 20px;
+      color: white; }
+      .log-in .log-in-container form input select, .log-in .create-container form input select, .log-in .forgot-container form input select, .create .log-in-container form input select, .create .create-container form input select, .create .forgot-container form input select, .forgot .log-in-container form input select, .forgot .create-container form input select, .forgot .forgot-container form input select {
+        border: none; }
+      .log-in .log-in-container form input:focus, .log-in .create-container form input:focus, .log-in .forgot-container form input:focus, .create .log-in-container form input:focus, .create .create-container form input:focus, .create .forgot-container form input:focus, .forgot .log-in-container form input:focus, .forgot .create-container form input:focus, .forgot .forgot-container form input:focus {
+        color: white;
+        outline: none; }
+      .log-in .log-in-container form input::-webkit-input-placeholder, .log-in .create-container form input::-webkit-input-placeholder, .log-in .forgot-container form input::-webkit-input-placeholder, .create .log-in-container form input::-webkit-input-placeholder, .create .create-container form input::-webkit-input-placeholder, .create .forgot-container form input::-webkit-input-placeholder, .forgot .log-in-container form input::-webkit-input-placeholder, .forgot .create-container form input::-webkit-input-placeholder, .forgot .forgot-container form input::-webkit-input-placeholder {
+        color: white; }
+      .log-in .log-in-container form input:-ms-input-placeholder, .log-in .create-container form input:-ms-input-placeholder, .log-in .forgot-container form input:-ms-input-placeholder, .create .log-in-container form input:-ms-input-placeholder, .create .create-container form input:-ms-input-placeholder, .create .forgot-container form input:-ms-input-placeholder, .forgot .log-in-container form input:-ms-input-placeholder, .forgot .create-container form input:-ms-input-placeholder, .forgot .forgot-container form input:-ms-input-placeholder {
+        color: white; }
+      .log-in .log-in-container form input::placeholder, .log-in .create-container form input::placeholder, .log-in .forgot-container form input::placeholder, .create .log-in-container form input::placeholder, .create .create-container form input::placeholder, .create .forgot-container form input::placeholder, .forgot .log-in-container form input::placeholder, .forgot .create-container form input::placeholder, .forgot .forgot-container form input::placeholder {
+        color: white; }
+      .log-in .log-in-container form input:first-of-type, .log-in .create-container form input:first-of-type, .log-in .forgot-container form input:first-of-type, .create .log-in-container form input:first-of-type, .create .create-container form input:first-of-type, .create .forgot-container form input:first-of-type, .forgot .log-in-container form input:first-of-type, .forgot .create-container form input:first-of-type, .forgot .forgot-container form input:first-of-type {
+        margin-top: 100px; }
+    .log-in .log-in-container form button, .log-in .log-in-container form .button, .log-in .create-container form button, .log-in .create-container form .button, .log-in .forgot-container form button, .log-in .forgot-container form .button, .create .log-in-container form button, .create .log-in-container form .button, .create .create-container form button, .create .create-container form .button, .create .forgot-container form button, .create .forgot-container form .button, .forgot .log-in-container form button, .forgot .log-in-container form .button, .forgot .create-container form button, .forgot .create-container form .button, .forgot .forgot-container form button, .forgot .forgot-container form .button {
+      background-color: white;
+      color: #009688;
+      width: 100%;
+      padding: 0px 20px;
+      margin-top: 15px;
+      height: 50px;
+      border-radius: 25px;
+      border: none; }
+    .log-in .log-in-container .account, .log-in .create-container .account, .log-in .forgot-container .account, .create .log-in-container .account, .create .create-container .account, .create .forgot-container .account, .forgot .log-in-container .account, .forgot .create-container .account, .forgot .forgot-container .account {
+      width: 100%;
+      text-align: center; }
+      .log-in .log-in-container .account a, .log-in .create-container .account a, .log-in .forgot-container .account a, .create .log-in-container .account a, .create .create-container .account a, .create .forgot-container .account a, .forgot .log-in-container .account a, .forgot .create-container .account a, .forgot .forgot-container .account a {
+        display: inline-block;
+        color: white;
+        margin-top: 15px;
+        text-decoration: none; }
+      .log-in .log-in-container .account span, .log-in .create-container .account span, .log-in .forgot-container .account span, .create .log-in-container .account span, .create .create-container .account span, .create .forgot-container .account span, .forgot .log-in-container .account span, .forgot .create-container .account span, .forgot .forgot-container .account span {
+        color: white;
+        padding: 0px 20px; }
+
+.create .create-container .sign-up {
+  text-align: center;
+  margin-top: 15px; }
+  .create .create-container .sign-up a {
+    text-decoration: none;
+    color: white; }
+    .create .create-container .sign-up a span {
+      text-transform: uppercase;
+      color: white;
+      margin-left: 5px; }

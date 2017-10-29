@@ -1,0 +1,25 @@
+html
+	head
+		include ../htmltemplate/head-pages.html
+
+	body
+		include ../htmltemplate/sidebar-pages.html
+		header
+			include ../htmltemplate/header.html
+
+		main
+			section.forgot
+				.forgot-container
+					form
+						input(type="email" placeholder="Email")
+						button Reset password
+					.account
+						a(href="create.html") Create account
+						span |
+						a(href="log-in.html") Sign in
+
+
+
+
+		footer
+			include ../htmltemplate/footer-pages.html

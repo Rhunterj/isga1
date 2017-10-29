@@ -1,0 +1,26 @@
+html
+	head
+		include ../htmltemplate/head-pages.html
+
+	body
+		include ../htmltemplate/sidebar-pages.html
+		header
+			include ../htmltemplate/header.html
+
+		main
+			section.create
+				.create-container
+					form
+						input(type="text" placeholder="Name")
+						input(type="email" placeholder="Email")
+						input(type="text" placeholder="Number")
+						input(type="password" placeholder="Password")
+						button sign in
+					.sign-up
+						a(href="log-in.html") Already have an account?
+								span sign in
+
+
+
+		footer
+			include ../htmltemplate/footer-pages.html

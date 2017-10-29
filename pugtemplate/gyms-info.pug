@@ -1,0 +1,32 @@
+html
+	head
+		include ../htmltemplate/head-pages.html
+
+	body
+		include ../htmltemplate/sidebar-pages.html
+		header
+			include ../htmltemplate/header.html
+
+		main
+			section.gyms-info
+				img(src="http://via.placeholder.com/200x200")
+				h2 Gyms
+					span Open
+				p This gym is open 24/7 and has all the latest equipment availible for sporters of any level.
+				p Unlimited acces starting at 19,95 montly
+				.container
+					.item Schedule
+					.item-data
+						p Open 24/7 365 days a year
+					.item Facilities
+					.item-data
+						p All the newest equipment
+					.item Personal training
+					.item-data
+						p For more info ask at the desk
+					a.button Visit
+					a.button Save
+
+
+		footer
+			include ../htmltemplate/footer-pages.html

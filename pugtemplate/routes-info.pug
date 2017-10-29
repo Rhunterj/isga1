@@ -1,0 +1,20 @@
+html
+	head
+		include ../htmltemplate/head-pages.html
+
+	body
+		include ../htmltemplate/sidebar-pages.html
+		header
+			include ../htmltemplate/header.html
+
+		main
+			section.routes-info
+				img(src="http://via.placeholder.com/200x200")
+				h2 Route
+					span 15km
+				p This is a beautifull route in the woods of Amsterdam You'll come across some nice nature along the way.
+				a.button walk
+				a.button save
+
+		footer
+			include ../htmltemplate/footer-pages.html

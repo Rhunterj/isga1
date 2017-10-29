@@ -1,0 +1,345 @@
+/* Imported style*/
+@import 'vars'
+
+/* General style*/
+*
+	padding: 0
+	margin: 0
+body
+	font-size: 62,5%
+	font-family: 'roboto', 'sans-serif'
+
+
+/* Header style */
+header
+	width: 100%
+	border-bottom: 1px solid black
+	-webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75)
+	-moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75)
+	box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75)
+	padding-top: 10px
+	padding-bottom: 10px
+	background-color: white
+	z-index: 100
+	p
+		display: inline-block
+		margin-left: 30px
+		font-size: 1.2em
+	.fa-bars
+		margin-left: 25px
+	.fa-search
+		float: right
+		margin-right: 25px
+	.fa-search, .fa-bars
+		font-size: 1.2em
+
+/*  Sidebar Style */
+aside
+	display: none
+	position: absolute
+	background: white
+	z-index: 115
+	min-height: 100vh
+	width: 80%
+	.sidebar-head
+		height: 150px
+		background: $main-color
+		text-align: center
+		img
+			width: 100px
+			border-radius: 50%
+			margin-top: 15px
+		p
+			color: white
+			margin-left: 40px
+			font-size: 1.2em
+			margin-top: 10px
+			text-align: left
+	.sidebar-content
+		ul
+			li
+				list-style-type: none
+				margin-left: 10px
+				padding: 1em
+				font-size: 0.8em
+				&:last-child
+					position: fixed
+					bottom: 0
+					a
+						color: red
+				a
+					color: black
+					font-size: 1.5em
+					&::hover
+						color: $main-color
+					&::visited
+						color: black
+				i
+					span
+						margin-left: 20px
+					&::before
+						display: inline-block
+						width: 45px
+						text-align: center
+.overlay
+	display: none
+	position: fixed
+	min-height: 100vh
+	left: 0
+	right: 0
+	background: black
+	opacity: 0.6
+	z-index: 110
+
+/* Home Style */
+.home-content
+	width: 100%
+	height: auto
+	position: relative
+	text-align: center
+	.home-image
+		position: relative
+		width: 100%
+		height: 200px
+		z-index: -1
+		overflow: hidden
+		.blur
+			-webkit-filter: blur(4px)
+			filter: blur(4px)
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 2
+			background-image: url('../img/sporten-in-amsterdam.jpeg')
+			background-size: cover
+		.fit
+			color: white
+			border: 3px solid white
+			padding: 20px
+			position: relative
+			text-align: center
+			z-index: 10
+			font-size: 1em
+			width: 60%
+			margin: 0 auto
+			margin-top: 65px
+	article
+		text-align: left
+		width: 80%
+		margin: 0 auto
+		h2
+			margin-top: 25px
+			color: $main-color
+			font-size: 2em
+		p
+			font-size: 1em
+
+	a
+		background-color: $main-color
+		color: white
+		font-size: 1em
+		padding: 15px 20px
+		text-decoration: none
+		margin-top: 50px
+		display: inline-block
+		border-radius: 2px
+
+/* List page Style */
+.list-content, .gyms-info, .sports-info
+	.container
+		display: block
+		width: 80%
+		height: auto
+		margin-left: 5%
+		margin-top: 45px
+		.item
+			display: block
+			height: 30px
+			line-height: 30px
+			background: white
+			border-bottom: 1px solid black
+			cursor: pointer
+			Color: $main-color
+			font-size: 1.2em
+			&:nth-child(5)
+				border: none
+		.item-data
+			display: none
+			h3
+				font-size: 1.1em
+				margin-top: 10px
+			p
+				font-size: 1em
+			
+		.active
+			color: black
+
+/* Profile style */
+.profile
+	.profile-head
+		width: 100%
+		height: 150px
+		background-color: $main-color
+		text-align: center
+		img
+			width: 150px
+			border-radius: 50%
+			margin-top: 75px
+	.profile-info
+		text-align: center
+		margin-top: 90px
+		.name
+			text-weight: bold
+			font-size: 1em
+		.date
+			color: #787878
+			font-size: 0.9em
+	.saved
+		width: 80%
+		margin: 0 auto
+		text-align: left
+		font-size: 1em
+		margin-top: 50px
+		p
+			border-bottom: 1px solid #E8E8E8
+			padding: 20px 0px
+			&:last-of-type
+				border: none
+			span
+				float: right
+
+/* Cards style */
+
+.routes, .gyms, .sports
+	.card
+		width: 80%
+		margin: 0 auto
+		background-color: #56A29B
+		color: white
+		margin-top: 20px
+		box-sizing: border-box
+		img
+			width: 100%
+			max-height: 200px
+		.card-content
+			padding: 20px
+			h2
+				font-size: 1.2em
+			p
+				font-size: 1em
+				margin-top: 10px
+			a
+				display: inline-block
+				font-size: 1em
+				color: white
+				text-decoration: none
+				margin-top: 30px
+				&:visited
+					color: white
+				&:last-of-type
+					float: right
+/* */
+.routes-info, .gyms-info, .sports-info
+	width: 80%
+	margin: 0 auto
+	margin-top: 15px
+	img
+		width: 100%
+		max-height: 100px
+	h2
+		font-size: 1.2em
+		margin-top: 15px
+		span
+			float: right
+	p
+		margin-top: 15px
+		font-size: 1em
+	a.button
+		margin-top: 30px
+		display: inline-block
+		position: fixed
+		bottom: 40px
+		background-color: $main-color
+		padding: 10px 25px
+		color: white
+		font-size: 1em
+		border-radius: 2px
+		&:last-of-type
+			right: 10%
+.gyms-info, .sports-info
+	.container
+		width: 100%
+		margin-left: 0
+		.item-data
+				p
+					margin-top: 10px
+					margin-bottom: 10px
+	p
+		&:nth-child(2)
+			margin-top: 15px
+	a
+		position: static
+
+/* Log in */
+.log-in, .create, .forgot
+	width: 100%
+	height: 100vh
+	background-color: $main-color
+	.log-in-container, .create-container, .forgot-container
+		width: 80%
+		margin: 0 auto
+		form
+			input
+				margin-top: 15px
+				border: 1px solid white
+				background-color: $main-color
+				border-radius: 25px
+				width: 100%
+				height: 50px
+				box-sizing: border-box
+				padding: 0px 20px
+				color: white
+				select
+					border: none
+				&:focus
+					color: white
+					outline: none
+				&::placeholder
+					color: white
+				&:first-of-type
+					margin-top: 100px
+			button, .button
+				background-color: white
+				color: $main-color
+				width: 100%
+				padding: 0px 20px
+				margin-top: 15px
+				height: 50px
+				border-radius: 25px
+				border: none
+		.account
+			width: 100%
+			text-align: center
+			a
+				display: inline-block
+				color: white
+				margin-top: 15px
+				text-decoration: none
+			span
+				color: white
+				padding: 0px 20px
+.create
+	.create-container
+		.sign-up
+			text-align: center
+			margin-top: 15px
+			a
+				text-decoration: none
+				color: white
+				span
+					text-transform: uppercase
+					color: white
+					margin-left: 5px
+
